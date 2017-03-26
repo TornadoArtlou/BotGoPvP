@@ -14,6 +14,11 @@ var streamingGame = {type: 1, name: "Your prefix help | In " + client.Guilds.len
   console.log("Connected as: " + client.User.username);
 });
 
+client.Dispatcher.on("GUILD_CREATE", () => {
+var streamingGame = {type: 1, name: "Your prefix help | In " + client.Guilds.length + " servers.", url: "https://twitch.tv/yourtwitchaccount"};
+    client.User.setGame(streamingGame);
+});
+
 client.Dispatcher.on("MESSAGE_CREATE", e => {
   if (e.message.content == prefix + "myroles") {
   var member = e.message.member;
