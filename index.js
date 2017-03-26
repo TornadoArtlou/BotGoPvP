@@ -83,33 +83,7 @@ client.Dispatcher.on("MESSAGE_CREATE", e => {
         })
     e.message.addReaction("\u2705");
     } 
-
-    if (e.message.content == prefix + "myinfo") {
-    e.message.channel.sendMessage("", false, {
-          color: 0x0033FF,
-                        footer: {
-      icon_url: "your avatar",
-      text: "your bot name | Using BotGoPvP template <3"
-    },
-       "author": {
-      "name": "Your info.",
-      "icon_url": "avatar bot"
-    },
-          fields: [
-    {
-        name: "Userinfo", value: `About a user.`
-        }, 
-        
-        {
-        name: `Username`, value: e.message.author.username
-        },
-        {
-        name: 'Avatar', value: e.message.author.avatarURL
-        }
-        ]
-        })
-    }
-
+	
     if (e.message.content == prefix + "aboutbot") {
     e.message.channel.sendMessage("", false, {
           color: 0x0033FF,
