@@ -144,7 +144,7 @@ client.Dispatcher.on("MESSAGE_CREATE", e => {
     },
 			thumbnail: {url: `${e.message.mentions[0].avatarURL}`},
             title: `:information_source: About ${e.message.mentions[0].username}`,
-                fields: [{name: "Username:", value: `${e.message.mentions[0].username}`}, {name: "ID:", value: `${e.message.mentions[0].id}`}, {name: "Discriminator:", value: `#${e.message.mentions[0].discriminator}`}, {name: "Status:", value: `${e.message.mentions[0].status}`}, {name: "Is Bot:", value: `${e.message.mentions[0].bot}`}]}, [{name: "Game:", value: `${e.message.mentions[0].game.name}`},
+                fields: [{name: "Username:", value: `${e.message.mentions[0].username}`}, {name: "ID:", value: `${e.message.mentions[0].id}`}, {name: "Discriminator:", value: `#${e.message.mentions[0].discriminator}`}, {name: "Status:", value: `${e.message.mentions[0].status}`}, {name: "Is Bot:", value: `${e.message.mentions[0].bot}`}]},
         });
 	}
 });
